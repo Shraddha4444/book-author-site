@@ -1,0 +1,46 @@
+/* 1. FONT IMPORTS for Sci-Fi Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;600&display=swap');
+
+:root {
+  --bg-dark: #000000;       
+  --bg-secondary: #0a0a0a;  
+  --accent: #ff0f0f;        
+  --accent-glow: rgba(255, 15, 15, 0.4);
+  --text-primary: #e0e0e0;  
+  --text-muted: #666;       
+  --border-tech: #333;      
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: 'Rajdhani', sans-serif; 
+  line-height: 1.6;
+  background-image: 
+    radial-gradient(circle at 50% 50%, #111 0%, #000 100%); 
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Custom Scrollbar (Red & Black) */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--accent); }
